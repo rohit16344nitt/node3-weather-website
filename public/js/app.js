@@ -13,7 +13,7 @@ w_form.addEventListener('submit',(e)=>
     e.preventDefault()
     const location = search.value
     console.log(location)
-    fetch('http://localhost:3000/info?search='+location).then((response)=>
+    fetch('/info?search='+location).then((response)=>
 {
    response.json().then((data)=>
    {
